@@ -2,13 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/nullstyles.css">
-    <link rel="stylesheet" href="./css/style.css" >
-    <link rel="stylesheet" href="./css/icomoon.css">
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nullstyles.css">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/icomoon.css">
 </head>
 <body>
+<header>
+    <div class="container head">
+        <div class="logo">
+            <img src="./assets/Logo.svg" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">About me</a>
+                </li>
+                <li>
+                    <a href="">Skills</a>
+                </li>
+                <li>
+                    <a href="">Project</a>
+                </li>
+                <li>
+                    <a href="">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="resume">
+            <button class="resume-btn">Resume<i class="fa-solid fa-download"></i></button>
+        </div>
+    </div>
+    <div class="container head-mobile">
+        <div class="logo">
+            <img src="./assets/Logo.svg" alt="logo">
+        </div>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
 <section>
     <div class="container hero">
         <div class="hero-content">
@@ -23,19 +61,18 @@
                 intuitive design, and delivering exceptional user experiences.
                 <br> Let’s build something amazing together!
             </p>
-
             <div class="hero-links">
                 <div class="hero-icon">
-                    <img src="assets/reddit.svg" alt="icon">
+                    <i class="fa-brands fa-reddit-alien"></i>
+                </div>
+                <div class="hero-icon linkedin">
+                    <b><span>in</span></b>
                 </div>
                 <div class="hero-icon">
-                    <img src="assets/linkedin.svg" alt="icon">
+                    <i class="fa-brands fa-discord"></i>
                 </div>
                 <div class="hero-icon">
-                    <img src="assets/discord.svg" alt="icon">
-                </div>
-                <div class="hero-icon">
-                    <img src="assets/twitter.svg" alt="icon">
+                    <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
         </div>
@@ -52,7 +89,7 @@
                 <i class="icon-css"></i>
                 <p>CSS</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card ">
                 <i class="icon-js"></i>
                 <p>JavaScript</p>
             </div>
@@ -118,11 +155,11 @@
                 <div class="header-wrapper">
                     <img src="assets/YouTube.svg" alt="icon">
                     <h4 class="card-header">
-                        Software Engineer at YouTube
+                        Software Engineer at Youtube
                     </h4>
                 </div>
                 <p class="card-description">
-                    At YouTube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise
+                    At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise
                     to ensure seamless functionality and scalability.
                 </p>
             </div>
@@ -135,7 +172,7 @@
                 </div>
                 <p class="card-description">
                     During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.
-               </p>
+                </p>
             </div>
         </div>
     </div>
@@ -189,7 +226,7 @@
                     <h2 class="number">01</h2>
                     <h4 class="project-title">Crypto Screener Application</h4>
                     <p class="project-description">An intuitive application for monitoring and analyzing cryptocurrency markets. It offers real-time data, advanced filters, and insightful tools tailored for traders and investors of all levels.</p>
-                    <button class="more-btn"> Learn more<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <button class="more-btn"> Learn more<i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
                 </div>
             </div>
         </div>
@@ -197,15 +234,44 @@
 </section>
 <section>
     <div class="container call-me">
-        <div class="form">
-        </div>
+        <form>
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="email">
+            <input type="text" placeholder="Your website (if exist)">
+            <input type="text" placeholder="How can I help?">
+            <textarea cols="30" rows="10"></textarea>
+            <div class="form-icon">
+                <button class="get-in">Get In Touch</button>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fa-brands fa-reddit-alien"></i>
+                    </div>
+                    <div class="icons">
+                        <b><span>in</span></b>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </form>
         <div class="contacts">
             <h2>Let’s talk for <br> Something special</h2>
             <p class="description">I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
-            <p class="email"><img src="assets/Vector.svg" alt="email"> email@example.com</p>
-            <p class="phone"><i class="fa-solid fa-phone"></i> +1 234 56 78 910</p>
+            <p class="email"><i class="fa-regular fa-envelope"></i> email@example.com</p>
+            <p class="phone"><i class="fa-solid fa-phone"></i>+1 234 56 78 910</p>
         </div>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/logo-2.svg" alt="logo">
+        </div>
+    </div>
+</footer>
 </body>
 </html>

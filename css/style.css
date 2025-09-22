@@ -122,6 +122,15 @@ section:nth-child(6) {
      object-fit: cover;
 }
 
+.hero-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 48px;
+     -moz-column-gap: 48px;
+          column-gap: 48px;
+}
+
 .skills-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,4 +424,25 @@ section:nth-child(6) {
 .burger-btn {
   background-color: transparent;
   font-size: 32px;
+}
+
+.skill-card:hover {
+  background-color: #222;
+  color: white;
+}
+
+.skill-card:hover i::before {
+  color: #fff;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+}
+.image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+  border: 1.33px;
 }
